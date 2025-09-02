@@ -1,0 +1,3 @@
+"""
+solaris_observe package
+"""

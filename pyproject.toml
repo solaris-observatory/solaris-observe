@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "solaris-observe"
+version = "0.1.0"
+description = "CLI and library for telescope schedule execution and tracking"
+authors = ["Marco Buttu"]
+readme = "README.md"
+packages = [{ include = "solaris_observe" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.12.3"
+astropy = "^6.1.0"
+numpy = "^1.26.0"
+
+[tool.poetry.scripts]
+solaris-observe = "solaris_observe.cli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
